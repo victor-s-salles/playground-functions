@@ -111,9 +111,20 @@ function decode(frase) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnologia, nomes) {
+  let array = []
+  let objeto = {};
+
+  for(let index = 0 ; index < tecnologia.length ; index += 1){
+    array[index] let tech = tecnologia[index];
+    array[index] let name = nomes; 
+  }
+ 
+return array;
+
 }
+
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'))
 
 module.exports = {
   calcArea,
