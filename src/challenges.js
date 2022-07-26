@@ -69,19 +69,45 @@ function fizzBuzz(numbers) {
     } else retorno[index] = 'bug!';
     if (((numbers[index] % 3) === 0) && ((numbers[index] % 5) === 0)) {
       retorno[index] += 'Buzz';
-    } else
+    }
   }
+
   return retorno;
 }
 
-console.log(fizzBuzz([9, 25, 15]));
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let vog = ['a', 'e', 'i', 'o', 'u'];
+  let vog2 = ['1', '2', '3', '4', '5'];
+  frase = frase.split('');
+
+  for (let index = 0; index < frase.length; index += 1) {
+    for (let index2 = 0; index2 < vog.length; index2 += 1) {
+      if (frase[index] === vog[index2]) {
+        frase[index] = vog2[index2];
+      }
+    }
+  }
+  frase = frase.join('');
+
+  return frase;
 }
-function decode() {
-  // seu código aqui
+
+function decode(frase) {
+  let vog2 = ['a', 'e', 'i', 'o', 'u'];
+  let vog = ['1', '2', '3', '4', '5'];
+  frase = frase.split('');
+
+  for (let index = 0; index < frase.length; index += 1) {
+    for (let index2 = 0; index2 < vog.length; index2 += 1) {
+      if (frase[index] === vog[index2]) {
+        frase[index] = vog2[index2];
+      }
+    }
+  }
+  frase = frase.join('');
+
+  return frase;
 }
 
 // Desafio 10
