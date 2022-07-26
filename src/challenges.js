@@ -112,15 +112,15 @@ function decode(frase) {
 
 // Desafio 10
 function techList(tecnologia, nomes) {
-  let array = []
-  let objeto = {};
+//   let array = []
+//   let objeto = {};
 
-  for(let index = 0 ; index < tecnologia.length ; index += 1){
-    array[index] let tech = tecnologia[index];
-    array[index] let name = nomes; 
-  }
+//   for(let index = 0 ; index < tecnologia.length ; index += 1){
+//     array[index] tech = tecnologia[index];
+//     array[index] name = nomes; 
+//   }
  
-return array;
+// return array;
 
 }
 
