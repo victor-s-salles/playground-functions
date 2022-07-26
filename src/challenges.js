@@ -112,17 +112,15 @@ function decode(frase) {
 
 // Desafio 10
 function techList(tecnologia, nomes) {
-//   let array = []
-//   let objeto = {};
-
-//   for(let index = 0 ; index < tecnologia.length ; index += 1){
-//     array[index] tech = tecnologia[index];
-//     array[index] name = nomes; 
-//   }
- 
-// return array;
-
-}
+  let array = [];
+  if (tecnologia.length != 0 && nomes != "") {
+    for (let tech of tecnologia.sort()) {
+      array.push({'tech': tech, 'name': nomes });
+    }
+    return array;
+  } else {
+    return 'Vazio!';}
+  }
 
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'))
 
